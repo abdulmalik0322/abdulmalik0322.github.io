@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdul Malik — Frontend Developer crafting responsive, high-performance web experiences with React, JavaScript and modern CSS." />
+  <title>Abdul Malik — Frontend Developer</title>
+
+  <link rel="icon" href="assets/favicon.jpg" type="image/jpeg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Abdul Malik logo" />
+        <span class="nav-logo-text">Abdul Malik</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="home" aria-label="Introduction">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-badge"><span class="dot" aria-hidden="true"></span> Available for remote work</div>
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Abdul Malik</h1>
+          <p class="hero-title">Frontend <span class="typed-accent" id="typed" aria-live="polite"></span><span class="typed-caret" aria-hidden="true">|</span></p>
+          <p class="hero-desc">
+            I build responsive, high-performance web interfaces with clean code and
+            thoughtful design — from landing pages to full dashboard applications.
+          </p>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="mailto:abdulmalik032212@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://wa.me/923221241827" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel:+923221241827" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="assets/Abdul_Malik_CV.pdf" download class="btn btn-outline"><i class="fa-solid fa-download" aria-hidden="true"></i> Download CV</a>
+          </div>
+
+          <div class="hero-stats" role="list" aria-label="Key numbers">
+            <div class="stat-item" role="listitem">
+              <div class="stat-num"><span class="count" data-count="10">0</span>+</div>
+              <div class="stat-label">Projects Built</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-num"><span class="count" data-count="6">0</span></div>
+              <div class="stat-label">Months Internship</div>
+            </div>
+            <div class="stat-item" role="listitem">
+              <div class="stat-num"><span class="count" data-count="8">0</span>+</div>
+              <div class="stat-label">Core Technologies</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-img-wrap">
+            <div class="hero-ring" aria-hidden="true"></div>
+            <img src="assets/hero.png" alt="Abdul Malik — Frontend Developer" fetchpriority="high" />
+            <div class="hero-float-badge" aria-hidden="true">
+              <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="badge-text"><span>Frontend Developer</span><small>React · JavaScript · TypeScript</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TECH MARQUEE ═══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i><span>TypeScript</span><i>✦</i><span>React</span><i>✦</i><span>Tailwind CSS</span><i>✦</i><span>Bootstrap</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>Responsive Design</span><i>✦</i><span>REST APIs</span><i>✦</i>
+        <span>HTML5</span><i>✦</i><span>CSS3</span><i>✦</i><span>JavaScript</span><i>✦</i><span>TypeScript</span><i>✦</i><span>React</span><i>✦</i><span>Tailwind CSS</span><i>✦</i><span>Bootstrap</span><i>✦</i><span>Git &amp; GitHub</span><i>✦</i><span>Responsive Design</span><i>✦</i><span>REST APIs</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container about-inner">
+        <div class="about-visual reveal">
+          <div class="about-img-frame">
+            <img src="assets/about.png" alt="Portrait of Abdul Malik" loading="lazy" />
+          </div>
+          <div class="about-exp-badge" aria-label="6 months of internship experience">
+            <div class="exp-num">6</div>
+            <div class="exp-label">Months<br />Internship</div>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="section-label">Who I am</div>
+          <h2 class="section-heading" id="about-heading">Developer who cares about the details</h2>
+          <p class="section-sub">
+            I'm Abdul Malik, a Frontend Developer and BS Computer Science student at Kohat
+            University of Science &amp; Technology. I completed a 6-month frontend internship
+            at Arch Technologies, where I worked on real, client-facing web interfaces.
+          </p>
+          <p class="section-sub">
+            I work with HTML, CSS, JavaScript, TypeScript and React — and I care about the
+            things users feel but never notice: fast load times, layouts that hold together
+            on every screen, and interfaces that are simple to use.
+          </p>
+
+          <div class="tech-stack" aria-label="Technology stack">
+            <span class="tech-pill">HTML5</span>
+            <span class="tech-pill">CSS3</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Tailwind CSS</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">Git &amp; GitHub</span>
+          </div>
+
+          <a href="assets/Abdul_Malik_CV.pdf" download class="btn btn-primary"><i class="fa-solid fa-download" aria-hidden="true"></i> Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ SKILLS ═══════════ -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Expertise</div>
+          <h2 class="section-heading" id="skills-heading">Technical Skills</h2>
+          <p class="section-sub">The tools I use every day to design and build for the web.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-level="95">
+            <div class="skill-top"><img src="assets/skill-html.png" alt="HTML5 logo" loading="lazy" /><span class="skill-pct">95%</span></div>
+            <h3>HTML5</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 proficiency"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="90">
+            <div class="skill-top"><img src="assets/skill-css.png" alt="CSS3 logo" loading="lazy" /><span class="skill-pct">90%</span></div>
+            <h3>CSS3</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 proficiency"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="85">
+            <div class="skill-top"><img src="assets/skill-js.png" alt="JavaScript logo" loading="lazy" /><span class="skill-pct">85%</span></div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript proficiency"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="80">
+            <div class="skill-top"><img src="assets/skill-react.png" alt="React logo" loading="lazy" /><span class="skill-pct">80%</span></div>
+            <h3>React</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="React proficiency"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="85">
+            <div class="skill-top"><img src="assets/skill-bootstrap.png" alt="Bootstrap logo" loading="lazy" /><span class="skill-pct">85%</span></div>
+            <h3>Bootstrap</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Bootstrap proficiency"><span></span></div>
+          </div>
+          <div class="skill-card reveal" data-level="80">
+            <div class="skill-top"><img src="assets/skill-tailwind.svg" alt="Tailwind CSS logo" loading="lazy" /><span class="skill-pct">80%</span></div>
+            <h3>Tailwind CSS</h3>
+            <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Tailwind CSS proficiency"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ PROJECTS ═══════════ -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">My work</div>
+          <h2 class="section-heading" id="projects-heading">Featured Projects</h2>
+          <p class="section-sub">Real projects I've designed and built — each one linked to its source code.</p>
+        </div>
+
+        <div class="project-filters reveal" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="webapp" role="tab" aria-selected="false">Web Apps</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false">UI &amp; Tools</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <article class="project-card reveal" data-category="webapp">
+            <div class="project-media">
+              <img src="assets/projects/erp.jpg" alt="Hangu Food Point restaurant management dashboard" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+              <span class="project-tag">Featured</span>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Hangu Food Point ERP</h3>
+                <p>Complete restaurant management system — POS billing, sales analytics, inventory, attendance &amp; payroll, printable PDF invoices.</p>
+                <div class="project-tech"><span>React</span><span>TypeScript</span><span>Tailwind</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" aria-label="View Hangu Food Point ERP code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="webapp">
+            <div class="project-media">
+              <img src="assets/projects/food-ordering.jpg" alt="Restaurant food ordering website" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Food Ordering System</h3>
+                <p>Online food ordering interface with menu browsing, cart management and a streamlined checkout flow.</p>
+                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322/restaurant-food-ordering-system" target="_blank" rel="noopener noreferrer" aria-label="View Food Ordering System code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="webapp">
+            <div class="project-media">
+              <img src="assets/projects/cloud.jpg" alt="Cloud storage web dashboard" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Cloud Storage Web</h3>
+                <p>Cloud storage dashboard concept — file management views, storage analytics and a clean file-browser UI.</p>
+                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322/cloud-storage-web" target="_blank" rel="noopener noreferrer" aria-label="View Cloud Storage Web code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="webapp">
+            <div class="project-media">
+              <img src="assets/projects/mentors.jpg" alt="Mentors website landing page" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Mentors Website</h3>
+                <p>Landing experience for a mentorship platform — mentor profiles, program sections and conversion-focused layouts.</p>
+                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322/mentors-website" target="_blank" rel="noopener noreferrer" aria-label="View Mentors Website code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="tools">
+            <div class="project-media">
+              <img src="assets/projects/weather.jpg" alt="Weather app interface" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Weather App</h3>
+                <p>Live weather application with city search, current conditions and forecast views powered by a weather API.</p>
+                <div class="project-tech"><span>JavaScript</span><span>REST API</span><span>CSS</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322/Weather-Api" target="_blank" rel="noopener noreferrer" aria-label="View Weather App code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="tools">
+            <div class="project-media">
+              <img src="assets/projects/auth.jpg" alt="Login and signup interface" loading="lazy" />
+              <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
+            </div>
+            <div class="project-body">
+              <div class="project-info">
+                <h3>Login &amp; Signup System</h3>
+                <p>Authentication UI with validated forms, password checks and smooth state transitions between views.</p>
+                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              </div>
+              <a class="code-btn" href="https://github.com/abdulmalik0322/login-Signup" target="_blank" rel="noopener noreferrer" aria-label="View Login and Signup System code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ JOURNEY ═══════════ -->
+    <section id="journey" aria-labelledby="journey-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-label">Background</div>
+          <h2 class="section-heading" id="journey-heading">Experience &amp; Education</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">May 2025 — Nov 2025</span>
+              <h3>Frontend Development Intern</h3>
+              <span class="timeline-org">Arch Technologies</span>
+              <p>Worked on real client-facing web interfaces — building responsive layouts, refining UI details, and shipping production frontend code as part of a team.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2024 — Present</span>
+              <h3>BS Computer Science</h3>
+              <span class="timeline-org">Kohat University of Science &amp; Technology</span>
+              <p>Currently in the 5th semester — focused on software engineering, databases, and modern web technologies.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2023 — 2024</span>
+              <h3>FSc Computer Science</h3>
+              <span class="timeline-org">Govt. Higher Secondary School &amp; College, Doaba (Hangu)</span>
+              <p>Graduated with 962/1200 marks, building a strong foundation in computing and mathematics.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Certification</span>
+              <h3>Web Development Fundamentals</h3>
+              <span class="timeline-org">Coursera</span>
+              <p>Completed professional certification covering modern web development essentials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-inner">
+          <div class="contact-info reveal">
+            <div class="section-label">Get in touch</div>
+            <h2 class="section-heading" id="contact-heading">Let's work together</h2>
+            <p class="section-sub">Have a project in mind, or a role to discuss? Send a message — I usually reply within a day.</p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+              <div class="contact-item-text"><span>Email</span><a href="mailto:abdulmalik032212@gmail.com">abdulmalik032212@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+              <div class="contact-item-text"><span>Phone / WhatsApp</span><a href="tel:+923221241827">+92 322 1241827</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div class="contact-item-text"><span>Location</span><p>Doaba, Hangu, Pakistan — open to remote work</p></div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group" id="group-name">
+                  <label for="contact-name">Your name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="John Doe" autocomplete="name" />
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+                <div class="form-group" id="group-email">
+                  <label for="contact-email">Email address</label>
+                  <input type="email" id="contact-email" name="email" placeholder="john@example.com" autocomplete="email" />
+                  <span class="field-error" aria-live="polite"></span>
+                </div>
+              </div>
+              <div class="form-group" id="group-message">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project or role…"></textarea>
+                <span class="field-error" aria-live="polite"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary form-submit" id="submit-btn">
+                  Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn btn-whatsapp" id="whatsapp-btn">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+                </button>
+              </div>
+              <p class="form-note">Your message is delivered straight to my email. Prefer instant chat? Send it on WhatsApp instead.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <img src="assets/logo.jpg" alt="Abdul Malik logo" />
+            <span class="nav-logo-text">Abdul Malik</span>
+          </a>
+          <p>Frontend Developer crafting responsive, high-performance web experiences from Pakistan.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="mailto:abdulmalik032212@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://wa.me/923221241827" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:abdulmalik032212@gmail.com">abdulmalik032212@gmail.com</a></li>
+            <li><a href="tel:+923221241827">+92 322 1241827</a></li>
+            <li><a href="assets/Abdul_Malik_CV.pdf" download>Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Abdul Malik. All rights reserved.</p>
+        <p>Designed &amp; built by Abdul Malik</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ LIGHTBOX ═══════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
+    <button class="lb-close" id="lb-close" aria-label="Close preview"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <div class="lb-box">
+      <img class="lb-img" id="lb-img" src="" alt="" />
+      <div class="lb-meta">
+        <div>
+          <h2 id="lb-title"></h2>
+          <p id="lb-desc"></p>
+          <div class="project-tech" id="lb-tech"></div>
+        </div>
+        <div class="lb-actions">
+          <a id="lb-github" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> View Code</a>
+          <div class="lb-nav">
+            <button id="lb-prev" class="btn btn-outline" aria-label="Previous project">← Prev</button>
+            <button id="lb-next" class="btn btn-outline" aria-label="Next project">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
