@@ -4,6 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Abdul Malik — Frontend Developer crafting responsive, high-performance web experiences with React, JavaScript and modern CSS." />
+  <meta name="theme-color" content="#0a0e1a" />
+  <link rel="canonical" href="https://abdulmalik0322.github.io/" />
+
+  <!-- Open Graph / link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abdul Malik — Portfolio" />
+  <meta property="og:title" content="Abdul Malik — Frontend Developer" />
+  <meta property="og:description" content="Frontend Developer crafting responsive, high-performance web experiences with React, JavaScript and modern CSS. Open to remote work." />
+  <meta property="og:url" content="https://abdulmalik0322.github.io/" />
+  <meta property="og:image" content="https://abdulmalik0322.github.io/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdul Malik — Frontend Developer" />
+  <meta name="twitter:description" content="Frontend Developer crafting responsive, high-performance web experiences with React, JavaScript and modern CSS." />
+  <meta name="twitter:image" content="https://abdulmalik0322.github.io/assets/og-image.jpg" />
+
   <title>Abdul Malik — Frontend Developer</title>
 
   <link rel="icon" href="assets/favicon.jpg" type="image/jpeg" />
@@ -74,6 +91,7 @@
 
           <div class="hero-socials" aria-label="Social links">
             <a href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/abdul-malik-614a3b373" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
             <a href="mailto:abdulmalik032212@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
             <a href="https://wa.me/923221241827" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
             <a href="tel:+923221241827" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
@@ -103,7 +121,7 @@
         <div class="hero-visual">
           <div class="hero-img-wrap">
             <div class="hero-ring" aria-hidden="true"></div>
-            <img src="assets/hero.png" alt="Abdul Malik — Frontend Developer" fetchpriority="high" />
+            <img src="assets/hero.webp" alt="Abdul Malik — Frontend Developer" fetchpriority="high" />
             <div class="hero-float-badge" aria-hidden="true">
               <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
               <div class="badge-text"><span>Frontend Developer</span><small>React · JavaScript · TypeScript</small></div>
@@ -126,7 +144,7 @@
       <div class="container about-inner">
         <div class="about-visual reveal">
           <div class="about-img-frame">
-            <img src="assets/about.png" alt="Portrait of Abdul Malik" loading="lazy" />
+            <img src="assets/about.webp" alt="Portrait of Abdul Malik" loading="lazy" />
           </div>
           <div class="about-exp-badge" aria-label="6 months of internship experience">
             <div class="exp-num">6</div>
@@ -227,7 +245,7 @@
 
           <article class="project-card reveal" data-category="webapp">
             <div class="project-media">
-              <img src="assets/projects/erp.jpg" alt="Hangu Food Point restaurant management dashboard" loading="lazy" />
+              <img src="assets/projects/erp.webp" alt="Hangu Food Point restaurant management dashboard" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
               <span class="project-tag">Featured</span>
             </div>
@@ -237,13 +255,16 @@
                 <p>Complete restaurant management system — POS billing, sales analytics, inventory, attendance &amp; payroll, printable PDF invoices.</p>
                 <div class="project-tech"><span>React</span><span>TypeScript</span><span>Tailwind</span></div>
               </div>
-              <a class="code-btn" href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" aria-label="View Hangu Food Point ERP code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <div class="project-actions">
+                <a class="demo-btn" href="https://abdulmalik0322.github.io/hangu-food-point-erp/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Hangu Food Point ERP"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <a class="code-btn" href="https://github.com/abdulmalik0322/hangu-food-point-erp" target="_blank" rel="noopener noreferrer" aria-label="View Hangu Food Point ERP code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="webapp">
             <div class="project-media">
-              <img src="assets/projects/food-ordering.jpg" alt="Restaurant food ordering website" loading="lazy" />
+              <img src="assets/projects/food-ordering.webp" alt="Restaurant food ordering website" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
             </div>
             <div class="project-body">
@@ -258,7 +279,7 @@
 
           <article class="project-card reveal" data-category="webapp">
             <div class="project-media">
-              <img src="assets/projects/cloud.jpg" alt="Cloud storage web dashboard" loading="lazy" />
+              <img src="assets/projects/cloud.webp" alt="Cloud storage web dashboard" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
             </div>
             <div class="project-body">
@@ -267,13 +288,16 @@
                 <p>Cloud storage dashboard concept — file management views, storage analytics and a clean file-browser UI.</p>
                 <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               </div>
-              <a class="code-btn" href="https://github.com/abdulmalik0322/cloud-storage-web" target="_blank" rel="noopener noreferrer" aria-label="View Cloud Storage Web code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <div class="project-actions">
+                <a class="demo-btn" href="https://abdulmalik0322.github.io/cloud-storage-web/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Cloud Storage Web"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <a class="code-btn" href="https://github.com/abdulmalik0322/cloud-storage-web" target="_blank" rel="noopener noreferrer" aria-label="View Cloud Storage Web code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="webapp">
             <div class="project-media">
-              <img src="assets/projects/mentors.jpg" alt="Mentors website landing page" loading="lazy" />
+              <img src="assets/projects/mentors.webp" alt="Mentors website landing page" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
             </div>
             <div class="project-body">
@@ -282,13 +306,16 @@
                 <p>Landing experience for a mentorship platform — mentor profiles, program sections and conversion-focused layouts.</p>
                 <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               </div>
-              <a class="code-btn" href="https://github.com/abdulmalik0322/mentors-website" target="_blank" rel="noopener noreferrer" aria-label="View Mentors Website code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <div class="project-actions">
+                <a class="demo-btn" href="https://abdulmalik0322.github.io/mentors-website/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Mentors Website"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <a class="code-btn" href="https://github.com/abdulmalik0322/mentors-website" target="_blank" rel="noopener noreferrer" aria-label="View Mentors Website code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="tools">
             <div class="project-media">
-              <img src="assets/projects/weather.jpg" alt="Weather app interface" loading="lazy" />
+              <img src="assets/projects/weather.webp" alt="Weather app interface" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
             </div>
             <div class="project-body">
@@ -303,7 +330,7 @@
 
           <article class="project-card reveal" data-category="tools">
             <div class="project-media">
-              <img src="assets/projects/auth.jpg" alt="Login and signup interface" loading="lazy" />
+              <img src="assets/projects/auth.webp" alt="Login and signup interface" loading="lazy" />
               <div class="project-overlay"><button class="overlay-btn js-view-btn" type="button">View Details</button></div>
             </div>
             <div class="project-body">
@@ -312,7 +339,10 @@
                 <p>Authentication UI with validated forms, password checks and smooth state transitions between views.</p>
                 <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               </div>
-              <a class="code-btn" href="https://github.com/abdulmalik0322/login-Signup" target="_blank" rel="noopener noreferrer" aria-label="View Login and Signup System code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <div class="project-actions">
+                <a class="demo-btn" href="https://abdulmalik0322.github.io/login-Signup/" target="_blank" rel="noopener noreferrer" aria-label="View live demo of Login and Signup System"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo</a>
+                <a class="code-btn" href="https://github.com/abdulmalik0322/login-Signup" target="_blank" rel="noopener noreferrer" aria-label="View Login and Signup System code on GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              </div>
             </div>
           </article>
 
@@ -439,6 +469,7 @@
           <p>Frontend Developer crafting responsive, high-performance web experiences from Pakistan.</p>
           <div class="footer-socials">
             <a href="https://github.com/abdulmalik0322" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/abdul-malik-614a3b373" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
             <a href="mailto:abdulmalik032212@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
             <a href="https://wa.me/923221241827" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
           </div>
