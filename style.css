@@ -261,7 +261,7 @@ body::after {
 .about-img-frame {
   position: relative; width: min(360px, 80vw); border-radius: var(--radius);
 }
-.about-img-frame img { border-radius: var(--radius); aspect-ratio: 3/3.8; object-fit: cover; object-position: top; width: 100%; display: block; }
+.about-img-frame img { border-radius: 46% 46% 48% 48% / 38% 38% 46% 46%; aspect-ratio: 3/3.8; object-fit: cover; object-position: top; width: 100%; display: block; }
 .about-exp-badge {
   position: absolute; bottom: -18px; right: -14px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
