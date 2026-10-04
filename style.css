@@ -260,13 +260,8 @@ body::after {
 .about-visual { position: relative; justify-self: center; }
 .about-img-frame {
   position: relative; width: min(360px, 80vw); border-radius: var(--radius);
-  padding: 14px; background: var(--card); border: 1px solid var(--border);
 }
-.about-img-frame::before {
-  content: ""; position: absolute; inset: -14px; border-radius: calc(var(--radius) + 14px);
-  border: 1.5px dashed rgba(249,115,22,0.3); pointer-events: none;
-}
-.about-img-frame img { border-radius: calc(var(--radius) - 6px); aspect-ratio: 1/1; object-fit: cover; object-position: top; width: 100%; }
+.about-img-frame img { border-radius: var(--radius); aspect-ratio: 1/1; object-fit: cover; object-position: top; width: 100%; display: block; }
 .about-exp-badge {
   position: absolute; bottom: -18px; right: -14px;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
