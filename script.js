@@ -72,7 +72,7 @@ function initNavbar() {
 function initTyped() {
   const el = document.getElementById('typed');
   if (!el) return;
-  const roles = ['Frontend Developer.', 'React Developer.', 'UI Designer.'];
+  const roles = ['Full Stack Developer.', 'React Developer.', 'Backend Developer.'];
   let ri = 0, ci = 0, deleting = false;
 
   function tick() {
