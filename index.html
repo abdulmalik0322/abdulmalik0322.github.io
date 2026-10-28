@@ -30,6 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script>(function(){try{var t=localStorage.getItem("am-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})();</script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -54,7 +55,10 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <a href="#contact" class="btn btn-primary nav-cta">Hire Me <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode"><i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i><i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i></button>
+        <a href="#contact" class="btn btn-primary nav-cta">Hire Me <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
 
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
