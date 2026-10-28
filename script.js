@@ -12,6 +12,7 @@
    ══════════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   initNavbar();
   initTyped();
   initCounters();
@@ -23,6 +24,28 @@ document.addEventListener('DOMContentLoaded', () => {
   initBackToTop();
   initYear();
 });
+
+/* ── 0. Theme toggle (dark / light) ───────── */
+function initTheme() {
+  const btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  const sync = () => {
+    const light = document.documentElement.getAttribute('data-theme') === 'light';
+    btn.setAttribute('aria-label', light ? 'Switch to dark mode' : 'Switch to light mode');
+  };
+  sync();
+  btn.addEventListener('click', () => {
+    const light = document.documentElement.getAttribute('data-theme') === 'light';
+    if (light) {
+      document.documentElement.removeAttribute('data-theme');
+      try { localStorage.setItem('am-theme', 'dark'); } catch (e) {}
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      try { localStorage.setItem('am-theme', 'light'); } catch (e) {}
+    }
+    sync();
+  });
+}
 
 /* ── 1. Navbar / drawer / progress ────────── */
 function initNavbar() {
