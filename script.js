@@ -174,7 +174,7 @@ function initLightbox() {
     title: c.querySelector('.project-info h3').textContent.trim(),
     desc: c.querySelector('.project-info p').textContent.trim(),
     tech: Array.from(c.querySelectorAll('.project-tech span')).map(s => s.textContent.trim()),
-    github: c.querySelector('.code-btn').getAttribute('href'),
+    github: c.querySelector('.code-btn') ? c.querySelector('.code-btn').getAttribute('href') : '',
   }));
 
   let idx = -1;
@@ -186,7 +186,8 @@ function initLightbox() {
     lbTitle.textContent = d.title;
     lbDesc.textContent = d.desc;
     lbTech.innerHTML = d.tech.map(t => '<span>' + t + '</span>').join('');
-    lbGithub.href = d.github;
+    lbGithub.href = d.github || '#';
+    lbGithub.style.display = d.github ? '' : 'none';
     lb.classList.add('active');
     lb.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
