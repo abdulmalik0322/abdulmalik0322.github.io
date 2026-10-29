@@ -280,7 +280,7 @@ function initContactForm() {
     el.addEventListener('input', () => setError(key, ''))
   );
 
-  // Send straight to Abdul's email via FormSubmit (no backend needed)
+  // Send straight to Abdul's email via Web3Forms (no backend needed)
   form.addEventListener('submit', e => {
     e.preventDefault();
     const v = readFields();
@@ -290,26 +290,23 @@ function initContactForm() {
     btn.disabled = true;
     btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin" aria-hidden="true"></i> Sending…';
 
-    fetch('https://formsubmit.co/ajax/abdulmalik032212@gmail.com', {
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
+        access_key: '74eb3a56-f347-43a7-9872-79acb53b79da',
         name: v.name,
         email: v.email,
         message: v.message,
-        _subject: 'New portfolio message from ' + v.name,
-        _template: 'table',
-        _captcha: 'false',
+        subject: 'New portfolio message from ' + v.name,
+        from_name: v.name,
       }),
     })
       .then(res => res.json())
       .then(data => {
-        if (data && data.success === 'true') {
+        if (data && data.success === true) {
           showToast('success', 'Message sent! I\'ll get back to you soon.');
           form.reset();
-        } else if (data && /html files/i.test(data.message || '')) {
-          // FormSubmit blocks local file:// testing — the site must be hosted
-          showToast('error', 'Email needs the site hosted — please use WhatsApp for now.');
         } else {
           throw new Error('send failed');
         }
